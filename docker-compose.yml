@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+      - "8043:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+  # redis:
+  #   image: "redis:alpine"
