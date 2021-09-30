@@ -1,11 +1,12 @@
 version: "3.9"
 services:
   web:
-    build: .
+    image: rahulvermaforu/netcoreapp:1.0
     ports:
       - "8080:80"
       - "8043:443"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+
   # redis:
   #   image: "redis:alpine"
